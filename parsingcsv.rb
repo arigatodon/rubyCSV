@@ -26,7 +26,7 @@ hashes.each do |data|
   puts data # show data hash in console
 
   movieio = Movie.new
-  movieio.dvd_Title = data[:dvd_Title]
+  movieio.dvd_title = data[:dvd_title]
   movieio.studio = data[:studio]
   movieio.released = data[:released]
   movieio.status = data[:status]
@@ -49,4 +49,4 @@ end
 
 
 puts "------------------"
-p movie[4]
+p movie[60]
