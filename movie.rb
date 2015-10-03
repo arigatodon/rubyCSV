@@ -22,6 +22,23 @@ class Movie
    @timestamp = timestamp
 
   end
-
-
 end
+
+=begin
+Music = []
+Documentary = [] 
+Fantasy = []
+Animation = [] 
+=end
+class Music < Movie
+end
+
+class Documentary < Movie
+end
+
+class Fantasy < Movie
+end
+
+class Animatio < Movie
+end
+
