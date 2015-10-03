@@ -11,10 +11,10 @@ csv = CSV.new(
 )
 movie = []
 #category
-Music = []
-Documentary = [] 
-Fantasy = []
-Animation = []
+Music1 = []
+Documentary1 = [] 
+Fantasy1 = []
+Animation1 = []
 # Convert each CSV::Row object in a hash
 movie = csv.to_a.map(&:to_hash)
 # Iterate over hashes
@@ -31,7 +31,6 @@ movie.each do |data|
   data.delete(:timestamp)
   puts "---------------------------------------------------------------"
   puts data# show data hash in console
-
 end
 
 
@@ -39,13 +38,18 @@ end
 movie.each do |m|
   case m[:genre]
   when 'Music'
-    Music << Music.new(m)
+    Music1 << Music.new(m)
   when "Documentary"
-    Documentary << Documentary.new(m)
+    Documentary1 << Documentary.new(m)
   when "Fantasy"  
-    Fantasy << Fantasy.new(m)
+    Fantasy1 << Fantasy.new(m)
   when "Animation"
-    Animation << Animation.new(m)
+    Animation1 << Animation.new(m)
   end
 end
-
+puts "/////////////////////Categorias/////////////////////////"
+puts "         peliculas musicales : #{Music1.count}"
+puts "         peliculas documentales : #{Documentary1.count}"
+puts "         peliculas de fantasia : #{Fantasy1.count}"
+puts "         peliculas animadas : #{Animation1.count}"
+puts "////////////////////////////////////////////////////////"

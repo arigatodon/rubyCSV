@@ -29,16 +29,34 @@ Music = []
 Documentary = [] 
 Fantasy = []
 Animation = [] 
+hola={}
+puts movie.select{ |item| item[:genre] == "Comedy" }
 =end
 class Music < Movie
+  def initialize(data = {})
+    super
+    @genre = 'Music'
+  end
 end
 
 class Documentary < Movie
+  def initialize(data = {})
+    super
+    @genre = 'Documentary'
+  end
 end
 
 class Fantasy < Movie
+  def initialize(data = {})
+    super
+    @genre = 'Fantasy'
+  end
 end
 
-class Animatio < Movie
+class Animation < Movie
+  def initialize(data = {})
+    super
+    @genre = 'Animation'
+  end
 end
 
