@@ -34,6 +34,7 @@ class Music < Movie
     @genre = data[:genre]
     @released = data[:release]
     @rating = data[:rating]
+    @price = data[:price]
   end
 end
 

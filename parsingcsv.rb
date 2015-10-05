@@ -56,4 +56,17 @@ puts Music1[1..3]
 puts "--------ANIME--------------"
 puts Animation1[1..3]
 puts "------FANTASIA-------------"
-puts Fantasy[1..3]
+puts Fantasy1[1..3]
+
+=begin
+#Music1.each do |x|
+ #a= a + x[][:price]
+#end
+
+puts movie[1][:price]
+
+movie.each do |x|
+  a= a + movie[x][:price]
+end 
+puts a
+=end
